@@ -9,6 +9,6 @@ class Actor extends Model
 {
     use HasFactory;
     public function movies(){
-        return $this->belongsToMany(Actor::class,'movie_actor');
+        return $this->belongsToMany(Movie::class,'movie_actor');
     }
 }
